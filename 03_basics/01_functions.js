@@ -60,4 +60,4 @@ function returnSecondValue(getArray){
 }
 
 // console.log(returnSecondValue(myNewArray)); // 400
-console.log(returnSecondValue([100,856,542,652])); // 856N
+console.log(returnSecondValue([100,856,542,652])); // 856
