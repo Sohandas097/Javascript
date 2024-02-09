@@ -57,8 +57,36 @@ const users = [
 users[1].email
 console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)) // o/p -> [ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser)); // o/p ->  ['123abc', 'Sohan', false ]
-console.log(Object.entries(tinderUser)); // [ [ 'id', '123abc' ], [ 'name', 'Sohan' ], [ 'isLoggedIn', false ] ]
+// console.log(Object.keys(tinderUser)) // o/p -> [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUser)); // o/p ->  ['123abc', 'Sohan', false ]
+// console.log(Object.entries(tinderUser)); // [ [ 'id', '123abc' ], [ 'name', 'Sohan' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); // tells if given property is present in object or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // tells if given property is present in object or not
+
+
+const course = {
+    coursename:"js",
+    price:"999",
+    courseInstructer:"Hitesh"
+}
+
+// course.courseInstructer is used to get some values of any object's property
+// we can also used given method
+
+// const {courseInstructer} = course
+const {courseInstructer: instructer} = course 
+// here we are doing same thing but now we are giving
+// a short name instructer to the name "courseInstructer" 
+
+console.log(instructer);
+
+//////////////////////////   API    ///////////////////////////////////
+
+// its JSON format
+// {
+//     "name":"Sohan",
+//     "coursename":"js in hindi",
+//     "price":"free"
+// }
+
+
